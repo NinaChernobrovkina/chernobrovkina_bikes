@@ -12,3 +12,15 @@
     margin-top: 0;
   }
 }
+
+.page__kinds {
+  margin-top: 150px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 28px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: 40px;
+  }
+}
