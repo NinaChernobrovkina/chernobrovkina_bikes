@@ -62,11 +62,66 @@
     </form>
   </div>
 </header>
-<footer class="footer">
+<section class="about page__about" id="about">
+  <div class="about__wrapper">
+    <h2 class="about__title">Несколько фактов о нас</h2>
+    <ul class="about__facts">
+      <li class="about__fact">
+        <p class="about__fact-number">01</p>
+        <p class="about__fact-desc">Самый широкий выбор велосипедов!</p>
+      </li>
+      <li class="about__fact">
+        <p class="about__fact-number">02</p>
+        <p class="about__fact-desc">Доставка велосипедов по всей России!</p>
+      </li>
+      <li class="about__fact">
+        <p class="about__fact-number">03</p>
+        <p class="about__fact-desc">Большой выбор крутых аксессуаров!</p>
+      </li>
+      <li class="about__fact">
+        <p class="about__fact-number">04</p>
+        <p class="about__fact-desc">Профессиональные консультации!</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="kinds page__kinds" id="kinds">
+  <h2 class="kinds__title">Виды велосипедов</h2>
+  <ul class="kinds__list">
+    <li class="kinds__item">
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-1.webp 1x, img/card-1@2x.webp 2x">
+        <source type="image/webp" srcset="img/card-1_mobile.webp 1x, img/card-1_mobile@2x.webp 2x">
+        <source media="(min-width: 1024px)" srcset="img/card-1.jpg 1x, img/card-1@2x.jpg 2x">
+        <img src="img/card-1_mobile.jpg" srcset="img/card-1_mobile@2x.jpg 2x" alt="Дорожный велосипед" class="kinds__img" width="270" height="300">
+      </picture>
+      <p class="kinds__item-title">Дорожный велосипед</p>
+    </li>
+    <li class="kinds__item">
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-2.webp 1x, img/card-2@2x.webp 2x">
+        <source type="image/webp" srcset="img/card-2_mobile.webp 1x, img/card-2_mobile@2x.webp 2x">
+        <source media="(min-width: 1024px)" srcset="img/card-2.jpg 1x, img/card-2@2x.jpg 2x">
+        <img src="img/card-2_mobile.jpg" srcset="img/card-2_mobile@2x.jpg 2x" alt="Дорожный велосипед" class="kinds__img" width="270" height="300">
+      </picture>
+      <p class="kinds__item-title">Горный велосипед</p>
+    </li>
+    <li class="kinds__item">
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-3.webp 1x, img/card-3@2x.webp 2x">
+        <source type="image/webp" srcset="img/card-3_mobile.webp 1x, img/card-3_mobile@2x.webp 2x">
+        <source media="(min-width: 1024px)" srcset="img/card-3.jpg 1x, img/card-3@2x.jpg 2x">
+        <img src="img/card-3_mobile.jpg" srcset="img/card-3_mobile@2x.jpg 2x" alt="Дорожный велосипед" class="kinds__img" width="270" height="300">
+      </picture>
+      <p class="kinds__item-title">Детский велосипед</p>
+    </li>
+  </ul>
+</section>
+<footer class="footer" id="contacts">
   <p class="footer__title">Как нас найти?</p>
   <p class="footer__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая Конюшенная, д. 19</p>
   <div class="footer__map">
-    <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1621282609913!5m2!1sru!2sru" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.320894616387324!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1635275666610!5m2!1sru!2sru" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
   </div>
   <ul class="footer__contacts">
     <li class="footer__contacts-item">

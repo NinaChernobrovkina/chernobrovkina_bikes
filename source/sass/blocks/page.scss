@@ -4,3 +4,11 @@
   color: $black;
   height: 100%;
 }
+
+.page__about {
+  margin-top: 150px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 0;
+  }
+}
