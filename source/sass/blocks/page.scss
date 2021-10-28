@@ -24,3 +24,15 @@
     margin-top: 40px;
   }
 }
+
+.page__video {
+  margin-bottom: 248px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-bottom: 155px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 119px;
+  }
+}
