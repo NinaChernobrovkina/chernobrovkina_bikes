@@ -3,6 +3,12 @@
   font-size: 16px;
   color: $black;
   height: 100%;
+  margin: 0;
+
+  &--no-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .page__about {
@@ -17,7 +23,7 @@
   margin-top: 150px;
 
   @media (max-width: $max-tablet-width) {
-    margin-top: 28px;
+    margin-top: 26px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -26,13 +32,13 @@
 }
 
 .page__video {
-  margin-bottom: 248px;
+  margin-bottom: 150px;
 
   @media (max-width: $max-tablet-width) {
-    margin-bottom: 155px;
+    margin-bottom: 70px;
   }
 
   @media (max-width: $max-mobile-width) {
-    margin-bottom: 119px;
+    margin-bottom: 68px;
   }
 }

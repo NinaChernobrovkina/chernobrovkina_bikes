@@ -1,16 +1,3 @@
-const submitButton = document.querySelector('.form__submit');
-const phoneInput = document.querySelector('[name="phone"]');
-if (submitButton && phoneInput) {
-  submitButton.addEventListener('click', () => {
-    if (phoneInput.value.match(/[a-zа-я]/i)) {
-      phoneInput.setCustomValidity('В поле телефонного номера нельзя вводить буквы');
-      return false;
-    }
-    phoneInput.setCustomValidity('');
-    return true;
-  });
-}
-
 const pageHeader = document.querySelector('.header__nav');
 const headerToggle = document.querySelector('.header__toggle');
 const headerText = document.querySelector('.header__text');
