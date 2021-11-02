@@ -12,7 +12,7 @@
   }
 }
 
-.form__desc {
+.form p {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -32,7 +32,7 @@
   }
 }
 
-.form__label {
+.form label {
   display: block;
   margin: 20px 0;
 }
@@ -53,7 +53,7 @@
   }
 }
 
-.form__submit {
+.form button {
   display: block;
   width: 100%;
   background-color: $bright;

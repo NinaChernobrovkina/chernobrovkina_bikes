@@ -25,7 +25,7 @@
   }
 }
 
-.video__title {
+.video__wrapper h2 {
   text-align: center;
   font-weight: 600;
   font-size: 30px;
@@ -40,7 +40,7 @@
   }
 }
 
-.video__desc {
+.video__wrapper p {
   @include center(340px);
   font-weight: 300;
   font-size: 16px;
@@ -90,7 +90,7 @@
   background-color: $bright;
   top: 50%;
   left: 50%;
-  transform: translate(-32px, -32px);
+  transform: translate(-50%, -50%);
   padding: 23px 23px 23px 28px;
   cursor: pointer;
 
@@ -107,14 +107,12 @@
     width: 90px;
     height: 90px;
     padding: 32px 32px 32px 39px;
-    transform: translate(-45px, -45px);
   }
 
   @media (max-width: $max-mobile-width) {
     width: 65px;
     height: 65px;
     padding: 23px 23px 23px 28px;
-    transform: translate(-32px, -32px);
   }
 }
 

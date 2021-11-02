@@ -1,12 +1,12 @@
 .header {
-  background-image: url("../../img/header-bg.jpg");
+  background-image: url("../img/header-bg.jpg");
   background-position: center 0;
-  background-repeat: repeat-x;
+  background-size: cover;
   position: relative;
   padding-bottom: 220px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/header-bg@2x.jpg");
+    background-image: url("../img/header-bg@2x.jpg");
   }
 
   @media (max-width: $max-tablet-width) {
@@ -37,10 +37,7 @@
 }
 
 .header__nav {
-  margin-bottom: 256px;
-
   @media (max-width: $max-tablet-width) {
-    margin-bottom: 84px;
     position: absolute;
     top: 0;
     right: 0;
@@ -55,6 +52,8 @@
       right: 0;
       margin-bottom: 0;
       background-color: $white;
+      overflow: scroll;
+      z-index: 1;
     }
 
     &--nojs {
@@ -156,7 +155,7 @@
       position: absolute;
       width: 8px;
       height: 12px;
-      background-image: url("../../img/menu-arrow.svg");
+      background-image: url("../img/menu-arrow.svg");
       right: 16px;
       top: 24px;
     }
@@ -164,11 +163,13 @@
 }
 
 .header__row {
+  padding-top: 256px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: $max-tablet-width) {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -177,10 +178,12 @@
 
   @media (max-width: $max-tablet-width) {
     padding-bottom: 60px;
-    background-image: url("../../img/header-bg_tablet.jpg");
+    background-image: url("../img/header-bg_tablet.jpg");
+    background-position: center 0;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/header-bg_tablet@2x.jpg");
+      background-image: url("../img/header-bg_tablet@2x.jpg");
     }
 
     &--nojs {
@@ -191,15 +194,15 @@
 
   @media (max-width: $max-mobile-width) {
     padding: 0 16px 50px;
-    background-image: url("../../img/header-bg_mobile.jpg");
+    background-image: url("../img/header-bg_mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/header-bg_mobile@2x.jpg");
+      background-image: url("../img/header-bg_mobile@2x.jpg");
     }
   }
 }
 
-.header__title {
+.header__text h1 {
   font-weight: bold;
   font-size: 46px;
   line-height: 64px;
@@ -219,7 +222,7 @@
   }
 }
 
-.header__desc {
+.header__text p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;

@@ -46,48 +46,48 @@
         <svg class="header__logo" width="68" height="21">
           <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
         </svg>
-        <h1 class="header__title">
+        <h1>
           Мы продаем велосипеды
         </h1>
-        <p class="header__desc">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <form action="https://echo.htmlacademy.ru" class="header__form form">
-        <p class="form__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <label class="form__label" aria-label="Введите Ваше Имя">
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <label aria-label="Введите Ваше Имя">
           <input type="text" placeholder="Введите Ваше Имя" name="name" required="">
         </label>
-        <label class="form__label" aria-label="Введите Ваш номер телефона">
-          <input type="tel" placeholder="Введите Ваш номер телефона" name="phone" required="">
+        <label aria-label="Введите Ваш номер телефона">
+          <input type="tel" placeholder="Введите Ваш номер телефона" name="phone" pattern="[+\d\s\-()]+" required="">
         </label>
-        <button class="form__submit" type="submit">Подобрать велосипед мечты</button>
+        <button type="submit">Подобрать велосипед мечты</button>
       </form>
     </div>
   </div>
 </header>
 <section class="about page__about" id="about">
-  <h2 class="about__title">Несколько фактов о нас</h2>
+  <h2>Несколько фактов о нас</h2>
   <ul class="about__facts">
     <li class="about__fact">
-      <p class="about__fact-number">01</p>
-      <p class="about__fact-desc">Самый широкий выбор велосипедов!</p>
+      <div class="about__fact-number">01</div>
+      <div class="about__fact-desc">Самый широкий выбор велосипедов!</div>
     </li>
     <li class="about__fact">
-      <p class="about__fact-number">02</p>
-      <p class="about__fact-desc">Доставка велосипедов по всей России!</p>
+      <div class="about__fact-number">02</div>
+      <div class="about__fact-desc">Доставка велосипедов по всей России!</div>
     </li>
     <li class="about__fact">
-      <p class="about__fact-number">03</p>
-      <p class="about__fact-desc">Большой выбор крутых аксессуаров!</p>
+      <div class="about__fact-number">03</div>
+      <div class="about__fact-desc">Большой выбор крутых аксессуаров!</div>
     </li>
     <li class="about__fact">
-      <p class="about__fact-number">04</p>
-      <p class="about__fact-desc">Профессиональные консультации!</p>
+      <div class="about__fact-number">04</div>
+      <div class="about__fact-desc">Профессиональные консультации!</div>
     </li>
   </ul>
 </section>
 <section class="kinds page__kinds" id="kinds">
   <div class="kinds__wrapper">
-    <h2 class="kinds__title">Виды велосипедов</h2>
+    <h2>Виды велосипедов</h2>
     <ul class="kinds__list">
       <li class="kinds__item">
         <picture>
@@ -127,8 +127,8 @@
 </section>
 <section class="video page__video" id="video">
   <div class="video__wrapper">
-    <h2 class="video__title">Видео про велосипеды</h2>
-    <p class="video__desc">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+    <h2>Видео про велосипеды</h2>
+    <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
     <div class="video__video">
       <picture>
         <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
@@ -142,8 +142,8 @@
   </div>
 </section>
 <footer class="footer" id="contacts">
-  <p class="footer__title">Как нас найти?</p>
-  <p class="footer__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая Конюшенная, д. 19</p>
+  <div class="footer__title">Как нас найти?</div>
+  <div class="footer__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая Конюшенная, д. 19</div>
   <div class="footer__map">
     <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.320894616387324!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1635275666610!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
   </div>
