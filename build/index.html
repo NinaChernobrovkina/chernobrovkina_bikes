@@ -43,9 +43,11 @@
       <!-- header__nav--open - меню открыто -->
       <!-- header__text--nojs - состояние без js (меню открыто, кнопки нет) -->
       <div class="header__text header__text--nojs">
-        <svg class="header__logo" width="68" height="21">
-          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-        </svg>
+        <a class="header__logo-link">
+          <svg class="header__logo" width="68" height="21">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
         <h1>
           Мы продаем велосипеды
         </h1>
@@ -131,9 +133,13 @@
     <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
     <div class="video__video">
       <picture>
-        <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/video_tablet.webp 1x, img/video_tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/video_mobile.webp 1x, img/video_mobile@2x.webp 2x">
+        <source media="(min-width: 1024px)" srcset="img/video.jpg 1x, img/video@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/video_tablet.jpg 1x, img/video_tablet@2x.jpg 2x">
         <!-- 1х: 929x522px; 2x: 1858х1044px -->
-        <img src="img/video.jpg" srcset="img/video@2x.jpg 2x" alt="Видео про велосипеды" class="video__img" width="929" height="522">
+        <img src="img/video_mobile.jpg" srcset="img/video_mobile@2x.jpg 2x" alt="Видео про велосипеды" class="video__img" width="929" height="522">
       </picture>
       <button class="video__play" type="button">
         <img src="img/icon-play.svg" class="video__play-icon" width="14" height="19" alt="Кнопка воспроизведения">
