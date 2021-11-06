@@ -12,7 +12,7 @@ if (headerText) {
 if (headerToggle) {
   headerToggle.addEventListener('click', () => {
     pageHeader.classList.toggle('header__nav--open');
-    document.body.classList.toggle('page--no-scroll');
+    document.body.classList.toggle('page__body--no-scroll');
   });
 }
 
@@ -33,6 +33,7 @@ if (menuLinks) {
 
       if (pageHeader) {
         pageHeader.classList.remove('header__nav--open');
+        document.body.classList.remove('page__body--no-scroll');
       }
 
       const anchor = menuLink.href.match(/#.*/);

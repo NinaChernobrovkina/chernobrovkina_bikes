@@ -37,6 +37,7 @@
   max-width: 957px;
   height: 530px;
   margin: 0 auto;
+  position: relative;
 
   @media (max-width: $max-tablet-width) {
     width: auto;
@@ -61,10 +62,11 @@
 .footer__contacts {
   display: flex;
   justify-content: center;
-  margin: 37px 16px 96px 0;
+  flex-wrap: wrap;
+  margin: 37px 16px 76px 0;
 
   @media (max-width: $max-tablet-width) {
-    margin: 20px 16px 55px 0;
+    margin: 20px 10px 35px 0;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -76,7 +78,11 @@
 }
 
 .footer__contacts-item {
-  margin: 0 63px;
+  margin: 0 63px 20px;
+
+  @media (max-width: $max-tablet-width) {
+    margin: 0 65px 20px;
+  }
 
   @media (max-width: $max-mobile-width) {
     margin: 11px 0;
@@ -101,11 +107,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
   }
 
   &--mail::before {
     background-image: url("../img/icon-mail.svg");
+    top: 3px;
     left: -41px;
     width: 26px;
     height: 20px;
@@ -119,6 +125,7 @@
 
   &--phone::before {
     background-image: url("../img/icon-phone.svg");
+    top: 0;
     left: -37px;
     width: 22px;
     height: 24px;

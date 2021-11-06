@@ -3,12 +3,28 @@
   font-size: 16px;
   color: $black;
   height: 100%;
+}
+
+.page__body {
   margin: 0;
+  min-height: 100%;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
 
   &--no-scroll {
+    min-height: 100vh;
     height: 100vh;
     overflow: hidden;
   }
+}
+
+.page__main {
+  width: 100%;
 }
 
 .page__about {
@@ -20,7 +36,7 @@
 }
 
 .page__kinds {
-  margin-top: 150px;
+  margin-top: 110px;
 
   @media (max-width: $max-tablet-width) {
     margin-top: 26px;

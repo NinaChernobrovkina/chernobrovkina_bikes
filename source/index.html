@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Moon. Мы продаем велосипеды">
   <title>Moon. Мы продаем велосипеды</title>
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -12,7 +13,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <!-- page--no-scroll - страница не скроллится -->
-<body class="page">
+<body class="page__body">
 <header class="header">
   <div class="header__wrapper">
     <nav class="header__nav header__nav--nojs">
@@ -66,88 +67,90 @@
     </div>
   </div>
 </header>
-<section class="about page__about" id="about">
-  <h2>Несколько фактов о нас</h2>
-  <ul class="about__facts">
-    <li class="about__fact">
-      <div class="about__fact-number">01</div>
-      <div class="about__fact-desc">Самый широкий выбор велосипедов!</div>
-    </li>
-    <li class="about__fact">
-      <div class="about__fact-number">02</div>
-      <div class="about__fact-desc">Доставка велосипедов по всей России!</div>
-    </li>
-    <li class="about__fact">
-      <div class="about__fact-number">03</div>
-      <div class="about__fact-desc">Большой выбор крутых аксессуаров!</div>
-    </li>
-    <li class="about__fact">
-      <div class="about__fact-number">04</div>
-      <div class="about__fact-desc">Профессиональные консультации!</div>
-    </li>
-  </ul>
-</section>
-<section class="kinds page__kinds" id="kinds">
-  <div class="kinds__wrapper">
-    <h2>Виды велосипедов</h2>
-    <ul class="kinds__list">
-      <li class="kinds__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-1.webp 1x, img/card-1@2x.webp 2x">
-          <source type="image/webp" srcset="img/card-1_mobile.webp 1x, img/card-1_mobile@2x.webp 2x">
-          <!-- 1х: 342x503px; 2x: 684х1006px -->
-          <source media="(min-width: 1024px)" srcset="img/card-1.jpg 1x, img/card-1@2x.jpg 2x">
-          <!-- 1х: 270x300px; 2x: 540х600px -->
-          <img src="img/card-1_mobile.jpg" srcset="img/card-1_mobile@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
-        </picture>
-        <h3>Дорожный велосипед</h3>
+<main class="page__main">
+  <section class="about page__about" id="about">
+    <h2>Несколько фактов о нас</h2>
+    <ul class="about__facts">
+      <li class="about__fact">
+        <div class="about__fact-number">01</div>
+        <div class="about__fact-desc">Самый широкий выбор велосипедов!</div>
       </li>
-      <li class="kinds__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-2.webp 1x, img/card-2@2x.webp 2x">
-          <source type="image/webp" srcset="img/card-2_mobile.webp 1x, img/card-2_mobile@2x.webp 2x">
-          <!-- 1х: 342x566px; 2x: 684х1132px -->
-          <source media="(min-width: 1024px)" srcset="img/card-2.jpg 1x, img/card-2@2x.jpg 2x">
-          <!-- 1х: 270x300px; 2x: 540х600px -->
-          <img src="img/card-2_mobile.jpg" srcset="img/card-2_mobile@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
-        </picture>
-        <h3>Горный велосипед</h3>
+      <li class="about__fact">
+        <div class="about__fact-number">02</div>
+        <div class="about__fact-desc">Доставка велосипедов по всей России!</div>
       </li>
-      <li class="kinds__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-3.webp 1x, img/card-3@2x.webp 2x">
-          <source type="image/webp" srcset="img/card-3_mobile.webp 1x, img/card-3_mobile@2x.webp 2x">
-          <!-- 1х: 342x513px; 2x: 684х1026px -->
-          <source media="(min-width: 1024px)" srcset="img/card-3.jpg 1x, img/card-3@2x.jpg 2x">
-          <!-- 1х: 270x300px; 2x: 540х600px -->
-          <img src="img/card-3_mobile.jpg" srcset="img/card-3_mobile@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
-        </picture>
-        <h3>Детский велосипед</h3>
+      <li class="about__fact">
+        <div class="about__fact-number">03</div>
+        <div class="about__fact-desc">Большой выбор крутых аксессуаров!</div>
+      </li>
+      <li class="about__fact">
+        <div class="about__fact-number">04</div>
+        <div class="about__fact-desc">Профессиональные консультации!</div>
       </li>
     </ul>
-  </div>
-</section>
-<section class="video page__video" id="video">
-  <div class="video__wrapper">
-    <h2>Видео про велосипеды</h2>
-    <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-    <div class="video__video">
-      <picture>
-        <source type="image/webp" media="(min-width: 1024px)" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/video_tablet.webp 1x, img/video_tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/video_mobile.webp 1x, img/video_mobile@2x.webp 2x">
-        <source media="(min-width: 1024px)" srcset="img/video.jpg 1x, img/video@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/video_tablet.jpg 1x, img/video_tablet@2x.jpg 2x">
-        <!-- 1х: 929x522px; 2x: 1858х1044px -->
-        <img src="img/video_mobile.jpg" srcset="img/video_mobile@2x.jpg 2x" alt="Видео про велосипеды" class="video__img" width="929" height="522">
-      </picture>
-      <button class="video__play" type="button">
-        <img src="img/icon-play.svg" class="video__play-icon" width="14" height="19" alt="Кнопка воспроизведения">
-      </button>
+  </section>
+  <section class="kinds page__kinds" id="kinds">
+    <div class="kinds__wrapper">
+      <h2>Виды велосипедов</h2>
+      <ul class="kinds__list">
+        <li class="kinds__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-1.webp 1x, img/card-1@2x.webp 2x">
+            <source type="image/webp" srcset="img/card-1_mobile.webp 1x, img/card-1_mobile@2x.webp 2x">
+            <!-- 1х: 342x503px; 2x: 684х1006px -->
+            <source media="(min-width: 1024px)" srcset="img/card-1.jpg 1x, img/card-1@2x.jpg 2x">
+            <!-- 1х: 270x300px; 2x: 540х600px -->
+            <img src="img/card-1_mobile.jpg" srcset="img/card-1_mobile@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
+          </picture>
+          <h3>Дорожный велосипед</h3>
+        </li>
+        <li class="kinds__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-2.webp 1x, img/card-2@2x.webp 2x">
+            <source type="image/webp" srcset="img/card-2_mobile.webp 1x, img/card-2_mobile@2x.webp 2x">
+            <!-- 1х: 342x566px; 2x: 684х1132px -->
+            <source media="(min-width: 1024px)" srcset="img/card-2.jpg 1x, img/card-2@2x.jpg 2x">
+            <!-- 1х: 270x300px; 2x: 540х600px -->
+            <img src="img/card-2_mobile.jpg" srcset="img/card-2_mobile@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
+          </picture>
+          <h3>Горный велосипед</h3>
+        </li>
+        <li class="kinds__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-3.webp 1x, img/card-3@2x.webp 2x">
+            <source type="image/webp" srcset="img/card-3_mobile.webp 1x, img/card-3_mobile@2x.webp 2x">
+            <!-- 1х: 342x513px; 2x: 684х1026px -->
+            <source media="(min-width: 1024px)" srcset="img/card-3.jpg 1x, img/card-3@2x.jpg 2x">
+            <!-- 1х: 270x300px; 2x: 540х600px -->
+            <img src="img/card-3_mobile.jpg" srcset="img/card-3_mobile@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
+          </picture>
+          <h3>Детский велосипед</h3>
+        </li>
+      </ul>
     </div>
-  </div>
-</section>
-<footer class="footer" id="contacts">
+  </section>
+  <section class="video page__video" id="video">
+    <div class="video__wrapper">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div class="video__video">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video_tablet.webp 1x, img/video_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video_mobile.webp 1x, img/video_mobile@2x.webp 2x">
+          <source media="(min-width: 1024px)" srcset="img/video.jpg 1x, img/video@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video_tablet.jpg 1x, img/video_tablet@2x.jpg 2x">
+          <!-- 1х: 929x522px; 2x: 1858х1044px -->
+          <img src="img/video_mobile.jpg" srcset="img/video_mobile@2x.jpg 2x" alt="Видео про велосипеды" class="video__img" width="929" height="522">
+        </picture>
+        <button class="video__play" type="button">
+          <img src="img/icon-play.svg" class="video__play-icon" width="14" height="19" alt="Кнопка воспроизведения">
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer page__footer" id="contacts">
   <div class="footer__title">Как нас найти?</div>
   <div class="footer__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая Конюшенная, д. 19</div>
   <div class="footer__map">
